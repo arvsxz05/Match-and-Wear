@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!-- These are the options displayed in the type drop-down Spinner -->
+    <string-array name="array_outfit_type_options">
+        <item>@string/outfit_type_casual</item>
+        <item>@string/outfit_type_trendy</item>
+        <item>@string/outfit_type_elegant</item>
+        <item>@string/outfit_type_sexy</item>
+        <item>@string/outfit_type_exotic</item>
+        <item>@string/outfit_type_others</item>
+    </string-array>
+
+    <string-array name="array_clothes_type_options">
+        <item>@string/cloth_type_top</item>
+        <item>@string/cloth_type_bottom</item>
+        <item>@string/cloth_type_footwear</item>
+    </string-array>
+</resources>

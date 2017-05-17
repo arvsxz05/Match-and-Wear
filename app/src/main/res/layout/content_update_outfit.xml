@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_update_outfit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="@drawable/bg"
+    tools:context="com.example.arvin.matchandwear2.UpdateOutfit"
+    tools:showIn="@layout/activity_update_outfit">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/picture_instances">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/update_outfit_name"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:hint="@string/hint_outfit_name" />
+
+            <RelativeLayout
+                android:id="@+id/update_container_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/update_outfit_name"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <Spinner
+                    android:id="@+id/update_spinner_outfit_type"
+                    android:layout_height="48dp"
+                    android:layout_width="wrap_content"
+                    android:paddingRight="16dp"
+                    android:layout_toRightOf="@+id/text11"/>
+
+                <TextView
+                    android:text="@string/category_type"
+                    android:id="@+id/text11"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginStart="14dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/update_outfit_date"
+                android:layout_below="@+id/update_container_type"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/update_top"
+                android:layout_below="@+id/update_outfit_date">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/labelTop"
+                    android:text="@string/labelTop"
+                    android:textAlignment="center" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/labelTop"
+                    android:id="@+id/update_topGroup">
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="180dp"
+                        android:id="@+id/update_imageTop"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/update_imageTop"
+                        android:layout_alignBottom="@+id/update_imageTop"
+                        android:layout_alignParentTop="true">
+
+                        <Button
+                            android:text="@string/upload"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/update_uploadPictureTop"
+                            android:layout_above="@+id/update_takePictureTop"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
+
+                        <Button
+                            android:text="@string/take_picture"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/update_takePictureTop"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="33dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/update_bottom"
+                android:layout_below="@+id/update_top">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/labelBottom"
+                    android:text="@string/labelTop"
+                    android:textAlignment="center" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/labelBottom"
+                    android:id="@+id/update_bottomGroup">
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="180dp"
+                        android:id="@+id/update_imageBottom"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/update_imageBottom"
+                        android:layout_alignBottom="@+id/update_imageBottom"
+                        android:layout_alignParentTop="true">
+
+                        <Button
+                            android:text="@string/upload"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/update_uploadPictureBottom"
+                            android:layout_above="@+id/update_takePictureBottom"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
+
+                        <Button
+                            android:text="@string/take_picture"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/update_takePictureBottom"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="33dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/update_footwear"
+                android:layout_below="@+id/update_bottom">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/labelFootwear"
+                    android:text="@string/labelFootwear"
+                    android:textAlignment="center" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/labelFootwear"
+                    android:id="@+id/update_footwearGroup">
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="180dp"
+                        android:id="@+id/update_imageFootwear"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/update_imageFootwear"
+                        android:layout_alignBottom="@+id/update_imageFootwear"
+                        android:layout_alignParentTop="true">
+
+                        <Button
+                            android:text="@string/upload"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/update_uploadPictureFootwear"
+                            android:layout_above="@+id/update_takePictureFootwear"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
+
+                        <Button
+                            android:text="@string/take_picture"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/update_takePictureFootwear"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="33dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/submit_outfit_updates"
+                android:text="@string/save_outfit"
+                android:layout_below="@id/update_footwear"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

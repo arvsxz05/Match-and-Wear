@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg"
+    tools:context=".FirstActivity" >
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/app_logo"
+        android:src="@drawable/logo"
+        android:layout_above="@+id/app_name"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Match and Wear"
+        android:id="@+id/app_name"
+        android:layout_above="@+id/eduser"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/edpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:layout_below="@+id/eduser"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_below="@+id/edpass"
+        android:layout_alignLeft="@+id/edpass"
+        android:layout_alignStart="@+id/edpass" />
+
+    <Button
+        android:id="@+id/not_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/login"
+        android:layout_alignBottom="@+id/login"
+        android:layout_alignRight="@+id/edpass"
+        android:text="Sign-up" />
+
+    <EditText
+        android:id="@+id/eduser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Username"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/edpass"
+        android:layout_alignStart="@+id/edpass">
+
+        <requestFocus />
+    </EditText>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_alignLeft="@+id/not_reg"
+        android:layout_alignStart="@+id/not_reg" />
+
+</RelativeLayout>

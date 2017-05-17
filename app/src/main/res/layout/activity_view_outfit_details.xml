@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_view_outfit_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg"
+    tools:context="com.example.arvin.matchandwear2.ViewOutfitDetails">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/outfit_name_detail"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textAlignment="center" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/outfit_type_detail"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:layout_below="@+id/outfit_name_detail"
+                android:layout_alignParentStart="true"
+                android:textAlignment="center" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/outfit_date_detail"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textAlignment="center"
+                android:layout_below="@+id/outfit_type_detail"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/outfit_date_detail"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:id="@+id/textView5"
+                android:text="@string/cloth_type_top" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:layout_below="@+id/textView5"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/imageViewTopDetail" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:layout_below="@+id/textView7"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/imageViewBottomDetail" />
+
+            <TextView
+                android:text="@string/cloth_type_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageViewTopDetail"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/textView7" />
+
+            <TextView
+                android:text="@string/cloth_type_footwear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/textView8"
+                android:layout_below="@id/imageViewBottomDetail"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:layout_below="@+id/textView8"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/imageViewFootwearDetail" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

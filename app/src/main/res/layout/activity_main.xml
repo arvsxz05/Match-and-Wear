@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.arvin.matchandwear2.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/picture_instances">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/outfit_name"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:hint="@string/hint_outfit_name" />
+
+            <RelativeLayout
+                android:id="@+id/container_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/outfit_name"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <Spinner
+                    android:id="@+id/spinner_outfit_type"
+                    android:layout_height="48dp"
+                    android:layout_width="wrap_content"
+                    android:paddingRight="16dp"
+                    android:layout_toRightOf="@+id/text11"/>
+
+                <TextView
+                    android:text="@string/category_type"
+                    android:id="@+id/text11"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginStart="14dp" />
+            </RelativeLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:ems="10"
+                android:id="@+id/outfit_date"
+                android:layout_below="@+id/container_type"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:hint="@string/hint_outfit_date" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/top"
+                android:layout_below="@+id/outfit_date">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/labelTop"
+                    android:text="@string/labelTop"
+                    android:textAlignment="center" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/labelTop"
+                    android:id="@+id/topGroup">
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="180dp"
+                        android:id="@+id/imageTop"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/imageTop"
+                        android:layout_alignBottom="@+id/imageTop"
+                        android:layout_alignParentTop="true">
+
+                        <Button
+                            android:text="@string/upload"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/uploadPictureTop"
+                            android:layout_above="@+id/takePictureTop"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
+
+                        <Button
+                            android:text="@string/take_picture"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/takePictureTop"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="33dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bottom"
+                android:layout_below="@+id/top">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/labelBottom"
+                    android:text="@string/labelBottom"
+                    android:textAlignment="center" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/labelBottom"
+                    android:id="@+id/bottomGroup">
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="180dp"
+                        android:id="@+id/imageBottom"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/imageBottom"
+                        android:layout_alignBottom="@+id/imageBottom"
+                        android:layout_alignParentTop="true">
+
+                        <Button
+                            android:text="@string/upload"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/uploadPictureBottom"
+                            android:layout_above="@+id/takePictureBottom"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
+
+                        <Button
+                            android:text="@string/take_picture"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/takePictureBottom"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="33dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/footwear"
+                android:layout_below="@+id/bottom">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/labelFootwear"
+                    android:text="@string/labelFootwear"
+                    android:textAlignment="center" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/labelFootwear"
+                    android:id="@+id/footwearGroup">
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="180dp"
+                        android:id="@+id/imageFootwear"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/imageFootwear"
+                        android:layout_alignBottom="@+id/imageFootwear"
+                        android:layout_alignParentTop="true">
+
+                        <Button
+                            android:text="@string/upload"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/uploadPictureFootwear"
+                            android:layout_above="@+id/takePictureFootwear"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
+
+                        <Button
+                            android:text="@string/take_picture"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/takePictureFootwear"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="33dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/submit_outfit"
+                android:text="@string/save_outfit"
+                android:layout_below="@id/footwear"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

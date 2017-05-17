@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/topGroup">
+
+        <RelativeLayout
+            android:layout_width="180dp"
+            android:layout_height="150dp"
+            android:id="@+id/fragment_text_details">
+
+            <TextView
+                android:id="@+id/list_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:text="chuchu"/>
+
+
+            <TextView
+                android:id="@+id/list_item_dialogue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="chuchu"
+                android:layout_below="@+id/list_item_title"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/fragment_text_details"
+            android:layout_alignBottom="@+id/fragment_text_details"
+            android:layout_alignParentTop="true">
+
+            <Button
+                android:text="Edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_outfit"
+                android:layout_below="@+id/view_outfit"
+                android:layout_alignParentRight="true"/>
+
+            <Button
+                android:text="Delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/delete_outfit"
+                android:layout_below="@id/edit_outfit"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"/>
+
+            <Button
+                android:text="View"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/view_outfit"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Match and Wear 2</string>
+
+    <string name="upload">Pick from Gallery</string>
+    <string name="take_picture">Take Picture</string>
+
+    <string name="labelTop">Select Top</string>
+    <string name="labelBottom">Select Bottom</string>
+    <string name="labelFootwear">Select Footwear</string>
+    <string name="hint_outfit_name">Outfit Name</string>
+    <string name="hint_outfit_date">Outfit Date</string>
+
+    <string name="save_outfit">Save Outfit!</string>
+    <string name="action_add">Add Outfit</string>
+    <string name="category_type">Type</string>
+
+    <string name="outfit_type_casual">Casual</string>
+    <string name="outfit_type_elegant">Elegant</string>
+    <string name="outfit_type_trendy">Trendy</string>
+    <string name="outfit_type_sexy">Sexy</string>
+    <string name="outfit_type_exotic">Exotic</string>
+    <string name="outfit_type_others">Others</string>
+
+    <string name="cloth_type_top">Top</string>
+    <string name="cloth_type_bottom">Bottom</string>
+    <string name="cloth_type_footwear">Footwear</string>
+
+    <string name="insert_outfit_successful">Outfit saved</string>
+    <string name="update_outfit_successful">Outfit updated</string>
+    <string name="insert_outfit_failed">Error with saving book</string>
+    <string name="title_activity_first">FirstActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_titles">Match and Wear 2</string>
+    <string name="title_activity_update_outfit">UpdateOutfit</string>
+    <string name="title_activity_delete_outfit">DeleteOutfit</string>
+
+    <string name="prompt_delete_outfit">Are you sure you want to remove outfit:</string>
+
+    <string name="logout">Logout</string>
+</resources>
